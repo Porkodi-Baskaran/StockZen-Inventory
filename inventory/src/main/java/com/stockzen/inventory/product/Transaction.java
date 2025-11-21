@@ -38,6 +38,44 @@ public class Transaction
     private Integer priceperunit;
     
     private String status;
+    
+    private String invoiceNumber;
+    private Integer amountPaid;
+    private Integer balanceAmount;
+    private String paymentType;
+
+    
+	public String getInvoiceNumber() {
+		return invoiceNumber;
+	}
+
+	public void setInvoiceNumber(String invoiceNumber) {
+		this.invoiceNumber = invoiceNumber;
+	}
+
+	public Integer getAmountPaid() {
+		return amountPaid;
+	}
+
+	public void setAmountPaid(Integer amountPaid) {
+		this.amountPaid = amountPaid;
+	}
+
+	public Integer getBalanceAmount() {
+		return balanceAmount;
+	}
+
+	public void setBalanceAmount(Integer balanceAmount) {
+		this.balanceAmount = balanceAmount;
+	}
+
+	public String getPaymentType() {
+		return paymentType;
+	}
+
+	public void setPaymentType(String paymentType) {
+		this.paymentType = paymentType;
+	}
 
 	public Integer getId() {
 		return Id;

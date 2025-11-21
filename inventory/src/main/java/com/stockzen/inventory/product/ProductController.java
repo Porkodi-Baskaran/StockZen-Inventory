@@ -22,7 +22,7 @@ public class ProductController {
 	@Autowired
 	ProductService productService;
 	
-	@PostMapping
+	@PostMapping("/add")
 	public ResponseEntity<Product> addProduct(@RequestBody Product product)
 	{
 		Product savedProduct = productService.addproduct(product);
@@ -70,7 +70,7 @@ public class ProductController {
         }
 	}
 	
-	@GetMapping
+	@GetMapping("/all")
 	public ResponseEntity<List<Product>> viewAllProduct()
 	{
 		List<Product> products = productService.viewAllProducts();
